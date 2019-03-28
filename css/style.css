@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Poppins:300,400,500,600');
+/*----bootstrap css ----- */
+@import url('../vendor/bootstrap/bootstrap.css');
+/*----font awesome -------*/
+@import url('../fonts/font-awesome/css/font-awesome.min.css');
+/*----camera-slider---*/
+@import url('../vendor/Camera-master/css/camera.css');
+/*----owl-carousel css----*/
+@import url('../vendor/owl-carousel/owl.carousel.css');
+@import url('../vendor/owl-carousel/owl.theme.css');
+/*-------- animated css ------*/
+@import url('../vendor/WOW-master/css/libs/animate.css');
+/*----------- Fancybox css -------*/
+@import url('../vendor/fancybox/dist/jquery.fancybox.min.css');
+/*--------- flat-icon ---------*/
+@import url('../fonts/icon/font/flaticon.css');
+
+
+
+
+@font-face {
+    font-family: 'font-awesome';
+    src: url('../fonts/font-awesome/fonts/fontawesome-webfont.ttf');
+    src: url('../fonts/font-awesome/fonts/fontawesome-webfont.eot'), /* IE9 Compat Modes */
+         url('../fonts/font-awesome/fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern B
+         sers */
+         url('../fonts/font-awesome/fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/font-awesome/fonts/fontawesome-webfont.svg') format('svg'); /* Legacy iOS */
+   }
+
+ html, body {
+    width:100%;height:100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+} /*背景图片100%适应整个屏幕*/
+
+ h1,h2,h3,h4,h5,h6,p,ul { margin:0;padding: 0;}
+
+ h1,h2,h3,h4,h5,h6 {color:#00000a;font-weight: 600;}
+
+ h1 {font-family: 'Open Sans',}
+
+ h2 {font-size: 42px; line-height: 60px;}
+
+ h3 {font-size: 32px;}
+
+ h4 {font-size: 30px;}
+
+ h5 {
+    font-size: 77px;
+}
+
+ h6 {font-size: 18px;}
+
+ p {line-height: 35px; font-family: 'Open Sans', sans-serif;}
+
+ ul {list-style-type: none;}
+
+ a {text-decoration: none; display: inline-block; }
+
+ a:hover,a:focus,a:visited {text-decoration: none; outline: none;}
+
+ img {max-width: 100%; display: block;}
+
+ button {border:none;outline: none;-webkit-box-shadow: none;box-shadow: none;display: block; padding: 0;}
+
+ input,textarea {outline: none; -webkit-box-shadow: none; box-shadow: none;-webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+
+.bg 
+{
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding:50px 0;
+    text-align: center;
+    color: #252525;
+    background: url(../images/home/slide-1.jpg) 
+    no-repeat bottom center;
+    background-size: cover;
+    z-index: 999;
+}
+
+
+.nav-tabs > li.active > a   {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    
+   }
+
+
+
+ .theme-main-header .button-group li {
+   display: inline-block;
+ }
+ .theme-main-header .button-group li:first-child {margin-right: 5px; }
+ .theme-main-header .button-group li a {
+  text-decoration:none;
+  font-family: 'Open Sans';
+   width: 100px;
+   line-height: 36px;
+   font-weight: 500;
+   border:2px solid transparent;
+   text-align: center;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 20px;
+   letter-spacing: 2px;
+   border-radius: 20px;
+ }
+ .theme-main-header .button-group li a.login {border-color: #fff;}
+ .theme-main-header .button-group li a:hover,
+ .theme-main-header .button-group li a.login:hover {
+   background: #fff;
+   border-color: #fff;
+   color: rgba(0,0,0,0.8);
+ }
+
+ .float-left {float:left;}
+.float-right {float:right;}
+
+
+
+   /*** 
+
+====================================================================
+  Theme Main Banner
+====================================================================
+
+ ***/
+
+ #theme-main-banner {margin-bottom: 130px;position: relative;}
+.camera_wrap {
+  float:none;
+}
+
+#theme-main-banner .camera_caption {
+  height: 100%;
+}
+#theme-main-banner .camera_caption .main-container {position: relative;}
+
+#theme-main-banner .camera_caption>div {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top:-470px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-shadow: none;
+  left: 0;
+  padding: 0;
+  z-index: 9;
+}
+#theme-main-banner .camera_caption .container {position: relative;z-index: 99;}
+#theme-main-banner .camera_caption .container h5 {
+    font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  color: #fff;
+  text-transform: uppercase;
+}
+#theme-main-banner.banner-one .camera_caption .container h5 {
+   
+  color: rgba(0,0,0,0.4);
+  text-transform: capitalize;
+}
+#theme-main-banner .camera_caption .container h1 {
+    font-family: 'Poppins';
+    font-size: 50px;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 25px 0 40px 0;
+}
+#theme-main-banner.banner-one .camera_caption .container h1 {color: #000;}
+#theme-main-banner .camera_caption .container p {
+  font-size: 20px;
+  margin: 0 0 55px 0;
+  color: rgba(255,255,255,0.85);
+}
+#theme-main-banner.banner-one .camera_caption .container p {color: rgba(0,0,0,0.6);}
+#theme-main-banner .camera_caption .container a {
+  width: 190px;
+  line-height: 56px;
+  font-size: 18px;
+  font-weight: 500;
+  border:2px solid #fff;
+  border-radius: 3px;
+  text-align: center;
+  margin: 10px 15px 0 0;
+  color: #fff;
+  
+}
+#theme-main-banner .camera_caption .container a:hover {-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);}
+#theme-main-banner .camera_caption .container a i {
+  font-size: 22px;
+  vertical-align: -1px;
+  margin-right: 10px;
+}
+#theme-main-banner .camera_caption .container a img {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#theme-main-banner .camera_caption .container a.button-one  {
+  background: #252525;
+  border-color: #252525;
+  text-decoration:none;
+}
+#theme-main-banner.banner-one .camera_caption .container a.button-two {
+  border-color: rgba(0,0,0,0.08);
+  color: rgba(0,0,0,0.52);
+  text-decoration:none;
+}
+#theme-main-banner .camera_caption .container a.button-one:hover,
+#theme-main-banner .camera_caption .container a.button-two:hover,
+#theme-main-banner.gradient-banner-one .camera_caption .container a.button-one:hover,
+#theme-main-banner.gradient-banner-one .camera_caption .container a.button-two:hover,
+.home-page-one .partical-gradient-one #theme-main-banner .camera_caption .container a.button-one:hover,
+.home-page-one .partical-gradient-one #theme-main-banner .camera_caption .container a.button-two:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #252525;
+}
+.home-page-one #theme-main-banner .camera_caption .container a:hover,
+.home-page-one #theme-main-banner.banner-one .camera_caption .container a.button-two:hover {
+  background: #fd3f38;
+  border-color: #fd3f38;
+  color: #fff;
+}
+#theme-main-banner .camera_caption .container .image-wrapper {
+  position: absolute;
+  width: 64%;
+}
+#theme-main-banner .camera_caption .container .image-wrapper img {max-width: 100% !important;}
+#theme-main-banner .camera_caption .container .image-wrapper,
+#theme-main-banner.banner-two .camera_caption .container .image-wrapper {
+  right: -140px;
+  top:-170px;
+}
+
+
+   /*** 
+
+====================================================================
+  我们做什么
+====================================================================
+
+ ***/
+
+ .bgone 
+{
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding:50px 0;
+    text-align: center;
+    color: #252525;
+    background-size: cover;
+    z-index: 999;
+}
+.what-we-do .theme-title-one {padding-bottom: 45px; }
+.what-we-do .single-block {
+ 
+  text-align: center;
+  padding: 35px 5px 70px 5px;
+  margin-top: 60px;
+}
+.what-we-do .single-block img {margin: 0 auto;}
+.what-we-do .single-block h6 {
+  font-family: "Poppins";
+  font-size: 20px;
+  margin: 50px 0 25px 0;
+  letter-spacing: 1.2px;
+}
+.what-we-do .single-block p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+}
+.what-we-do .single-block a {
+  width: 135px;
+  line-height: 43px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 5px;
+  color: rgba(0,0,0,0.8);
+  margin-top: 22px;
+}
+.what-we-do .single-block a:hover {color: #fff;border-color: #fff;}
+.what-we-do .single-block:hover {
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 70px 0px rgba(86, 103, 146, 0.05);
+          box-shadow: 0px 4px 70px 0px rgba(86, 103, 146, 0.05);
+}
+.what-we-do .single-block:hover img {
+  -webkit-transform:scale(0.9);
+          transform:scale(0.9);
+}
+
+
+.tran3s,.boost-your-phone .boster-image-wrapper img,.theme-button span,.owl-theme .owl-dots .owl-dot span,.pricing-plan-section .nav-tabs > li.active > a   {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+ }
+
+ .tran4s {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+ }
+ 
